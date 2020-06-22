@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_qr_generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b22-a6-NxD">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b22-a6-NxD" secondAttribute="height" multiplier="1:1" id="1fG-ov-OuN"/>
+                                    <constraint firstAttribute="height" constant="200" id="Cpm-U8-2Q5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-5t-vtN">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yna-fP-1F2"/>
+                                    <constraint firstAttribute="width" constant="200" id="sMt-Tg-Tve"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hE2-5t-vtN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4e4-4Y-934"/>
+                            <constraint firstItem="b22-a6-NxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Itr-Pu-tKB"/>
+                            <constraint firstItem="b22-a6-NxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jwK-6M-ogw"/>
+                            <constraint firstItem="hE2-5t-vtN" firstAttribute="centerX" secondItem="b22-a6-NxD" secondAttribute="centerX" id="pey-od-tNG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="overlayImageView" destination="hE2-5t-vtN" id="ppi-9H-SMN"/>
+                        <outlet property="qrCodeImageView" destination="b22-a6-NxD" id="Ign-xm-GZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="block" width="297" height="69"/>
+    </resources>
+</document>
